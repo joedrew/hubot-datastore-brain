@@ -2,6 +2,7 @@
 #   Persist hubot's brain to Google Cloud Datastore
 #
 # Configuration:
+#   DATASTORE_KIND
 #   GCLOUD_PROJECT or GAE_LONG_APP_ID
 #
 # Commands:
@@ -18,7 +19,7 @@ unwrap = (data)->
   data
 
 module.exports = (robot)->
-  KIND = "hubot"
+  KIND = process.env.DATASTORE_KIND or "hubot"
   projectId = process.env.GCLOUD_PROJECT or process.env.GAE_LONG_APP_ID
   datastore = gcloud
     projectId: projectId
