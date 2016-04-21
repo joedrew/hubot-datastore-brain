@@ -15,7 +15,7 @@ wrap = (data)->
 
 unwrap = (data)->
   return data['_value'] if data['_value']
-  data  
+  data
 
 module.exports = (robot)->
   KIND = "hubot"
@@ -27,7 +27,7 @@ module.exports = (robot)->
   robot.brain.setAutoSave false
 
   getData = ->
-    query = datastore.createQuery "hubot"
+    query = datastore.createQuery KIND
     datastore.runQuery query, (err, entitys)->
       return  robot.logger.error err if err
       _private = {}
