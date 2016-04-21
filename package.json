@@ -1,7 +1,7 @@
 {
   "name": "hubot-datastore-brain",
   "description": "A hubot script to persist hubot's brain using datastore",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Kazuhiro Kubota <k2.wanko@gmail.com>",
   "bugs": {
     "url": "https://github.com/k2wanko/hubot-datastore-brain/issues"
