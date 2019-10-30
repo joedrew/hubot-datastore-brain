@@ -1,22 +1,18 @@
 {
   "name": "hubot-datastore-brain",
   "description": "A hubot script to persist hubot's brain using datastore",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Kazuhiro Kubota <k2.wanko@gmail.com>",
   "bugs": {
     "url": "https://github.com/k2wanko/hubot-datastore-brain/issues"
   },
   "dependencies": {
-    "gcloud": "^0.30.3",
-    "memcached": "^2.2.1"
+    "@google-cloud/datastore": "^4.4.1"
   },
-  "devDependencies": {
-    "coffee-script": "^1.10.0",
-    "coffeelint": "^1.15.2"
-  },
+  "devDependencies": {},
   "files": [
-    "index.coffee",
-    "src/datastore-brain.coffee"
+    "index.js",
+    "src/datastore-brain.js"
   ],
   "homepage": "https://github.com/k2wanko/hubot-datastore-brain#readme",
   "keywords": [
@@ -25,12 +21,10 @@
     "hubot"
   ],
   "license": "MIT",
-  "main": "index.coffee",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/k2wanko/hubot-datastore-brain.git"
   },
-  "scripts": {
-    "test": "coffeelint ./**/*.coffee"
-  }
+  "scripts": {}
 }
